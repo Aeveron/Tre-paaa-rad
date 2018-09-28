@@ -40,6 +40,8 @@ namespace Tre_på_rad
             var rowIndex = rowChar - '1';
             var cellIndex = colIndex + rowIndex * 3;
 
+            Ruter[cellIndex].Mark(false);
+
             var randomCellIndex = _Random.Next(cellIndex);
 
             if ()
