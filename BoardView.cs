@@ -16,7 +16,7 @@ namespace Tre_på_rad
                               "2│" + ruter[3] + " " + ruter[4] + " " + ruter[5] + "│\r\n" + 
                               "3│" + ruter[6] + " " + ruter[7] + " " + ruter[8] + "│\r\n" +
                               " └─────┘");
-            var x = "zasd";
+            
         }
 
         
