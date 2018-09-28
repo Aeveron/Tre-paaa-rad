@@ -11,6 +11,7 @@ namespace Tre_på_rad
             var boardModel = new BoardModel();
             while (true)
             {               
+                Console.Clear();
                 BoardView.Show(boardModel.Ruter);
                 Console.Write("Skriv inn hvor du vil sette kryss (f.eks. \"a2\"): ");
                 var position = Console.ReadLine();
