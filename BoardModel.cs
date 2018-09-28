@@ -14,6 +14,8 @@ namespace Tre_på_rad
             {
                 Ruter[i] = new CellModel();
             }
+
+            _Random = new Random();
         }
 
         public void SetCross(string position)
@@ -30,9 +32,22 @@ namespace Tre_på_rad
             Ruter[cellIndex].Mark(true);
         }
 
-        public void SetRandomCircle()
+        public void SetRandomCircle(string position)
         {
+            var colChar = position[0];
+            var rowChar = position[1];            
+            var colIndex = colChar - 'a';
+            var rowIndex = rowChar - '1';
+            var cellIndex = colIndex + rowIndex * 3;
 
+            var randomCellIndex = _Random.Next(cellIndex);
+
+            if ()
+            {
+                Console.WriteLine('o');
+            }
+
+            Console.WriteLine(randomCellIndex);
         }
     }
 }
