@@ -1,4 +1,6 @@
-﻿namespace Tre_på_rad
+﻿using System;
+
+namespace Tre_på_rad
 {
     public class CellModel
     {
@@ -24,6 +26,11 @@
         public void Mark(bool isPlayer1)
         {
             _content = isPlayer1 ? 1 : 2;
+        }
+
+        public static implicit operator CellModel(char v)
+        {
+            throw new NotImplementedException();
         }
     }
 }

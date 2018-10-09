@@ -10,7 +10,7 @@ namespace Tre_på_rad
         public static void Show(CellModel[] ruter)
         {
 
-           
+            Console.Clear();
             Console.WriteLine("  a b c\r\n " +
                                "┌─────┐\r\n" +
                               "1|" + FindChar(ruter[0]) + " " + FindChar(ruter[1]) + " " + FindChar(ruter[2]) + "│\r\n" + 
