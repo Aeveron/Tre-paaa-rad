@@ -17,7 +17,9 @@ namespace Tre_på_rad
                 var position = Console.ReadLine();
                 boardModel.SetCross(position);
                 Thread.Sleep(700);
-                boardModel.SetRandomCircle();
+                //boardModel.SetRandomCircle();
+                var success = boardModel.SetRandomCircle();
+                if (!success) return;
             }
         }
     }
